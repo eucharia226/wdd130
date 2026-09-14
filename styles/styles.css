@@ -22,7 +22,7 @@ img {
 }
 
 p {
-  padding: 10px;
+  padding: 0px;
 }
 
 aside {
@@ -35,7 +35,7 @@ aside {
   
 }
 aside img {
-  width: 100%;
+  width: 200%;
   height: auto;
 }
 
@@ -43,4 +43,9 @@ footer {
   margin-top: 1rem;
   border-top: 1px solid black;
   text-align: center;
+}
+
+main img{
+  width: 150px;
+  height: auto;
 }
