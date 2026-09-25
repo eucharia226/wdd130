@@ -64,6 +64,7 @@ nav, p, section, article {
 
 .hero article {
     background-color: var(--secondary-color);
+    position: absolute;
 }
 .hero article img {
     float: right;
