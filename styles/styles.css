@@ -11,12 +11,15 @@
 nav {
   background-color: darkblue;
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
   color: white;
   display: block;
   padding: 20px;
+  text-decoration: none;
 }
 
 h1 {
@@ -83,4 +86,23 @@ main{
   border: 1px solid #333;
   background-color: rgb(192, 188, 188);
   
+}
+
+header, .grid, footer {
+  width: 840px;
+  margin:  auto;
+
+}
+.grid{
+  display: grid;
+  align-items: center;
+
+}
+
+main{
+  grid-column: 2/3;
+}
+
+aside{
+  grid-row: 1/2;
 }
