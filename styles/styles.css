@@ -12,7 +12,7 @@ nav {
   background-color: darkblue;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 nav a {
