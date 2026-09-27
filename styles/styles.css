@@ -9,14 +9,15 @@
 }
 
 nav {
-  background-color: darkblue;
+  background-color: darkblu;
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid #777;
 }
 
 nav a {
-  color: white;
+  color: whit;
   display: block;
   padding: 20px;
   text-decoration: none;
