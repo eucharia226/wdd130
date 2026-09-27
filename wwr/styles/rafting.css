@@ -96,16 +96,26 @@ nav a {
 
 .socialmedia img {
   width: 40px;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  float: left;
+}
+.socialmedia {
+  background-color: var(--secondary-color);
 }
 
 .adventure img {
-  width: 150px ;
+  width: 150px;
 }
 
-.adventure h2{
-    text-align: center;
-    margin-bottom: 20px;
+.adventure h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  display: grid;
+  grid-column: span 5;
 }
 
-
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
