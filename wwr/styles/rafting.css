@@ -96,12 +96,7 @@ nav a {
 
 .socialmedia img {
   width: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  float: left;
-}
-.socialmedia {
-  background-color: var(--secondary-color);
+  display: flex;
 }
 
 .adventure img {
@@ -119,3 +114,41 @@ nav a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+}
+.rafting img {
+    width: 130px;
+    height: auto;
+    /* position: absolute;
+    left: 250px;
+    top: 20px;
+    display: block; */
+    margin: auto;
+    
+
+}
+.rafting-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 30px;
+    
+ 
+}
+.rafting h2 {
+    text-align: center;
+    margin-bottom: 30px;
+
+    
+}
+
+
