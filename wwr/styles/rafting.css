@@ -162,6 +162,8 @@ form {
 
 .raft {
   text-align: center;
+  display: grid;
+  gap: -10rem;
 }
 
 fieldset {
@@ -183,7 +185,7 @@ fieldset {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.middle h1 {
+.middle h2 {
   text-align: center;
   display: grid;
   grid-column: span 5;
@@ -236,4 +238,9 @@ textarea {
   margin-bottom: 2rem;
   position: absolute;
   left: -30px;
+}
+
+iframe {
+  width: 400px;
+  height: 400px;
 }
