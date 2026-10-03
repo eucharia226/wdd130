@@ -112,7 +112,7 @@ nav a {
 
 .adventure {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 
 footer {
@@ -126,29 +126,114 @@ footer p {
   align-items: center;
 }
 .rafting img {
-    width: 130px;
-    height: auto;
-    /* position: absolute;
+  width: 130px;
+  height: auto;
+  /* position: absolute;
     left: 250px;
     top: 20px;
     display: block; */
-    margin: auto;
-    
-
+  margin: auto;
 }
 .rafting-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
-    gap: 30px;
-    
- 
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  align-items: center;
+  gap: 30px;
 }
 .rafting h2 {
-    text-align: center;
-    margin-bottom: 30px;
-
-    
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+.middle img {
+  width: 200px;
+}
 
+form {
+  width: 500px;
+  margin: 1rem;
+  padding: 1rem;
+  align-items: right;
+  position: relative;
+  
+
+  
+}
+
+.raft {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.middle {
+  border: 3px solid rgb(0 0 0 / 10%);
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.middle h1 {
+  text-align: center;
+  display: grid;
+  grid-column: span 5;
+  margin-bottom: 20px;
+}
+
+input{
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 50px;
+  border-radius: .3rem;
+}
+
+button {
+  background-color: #eee;
+  color: black;
+  border-radius: .3rem;
+  padding: .5rem;
+  width: 350px;
+}
+
+.lab {
+  display: block;
+  margin-bottom: .1rem;
+  
+
+}
+
+legend {
+  max-width: 30px;
+  margin-top: 25px;
+
+}
+
+.purpose {
+  margin-right: 12rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+  width: 300px;
+  border: 3px solid rgba(1, 1, 1, 0.1);
+}
+
+.checkbox {
+  margin-bottom: 2rem;
+  position: absolute;
+  left: -30px;
+}
