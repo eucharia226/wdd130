@@ -154,9 +154,6 @@ form {
   margin: 1rem;
   padding: 1rem;
   position: relative;
-  
-
-  
 }
 
 .raft {
@@ -190,26 +187,24 @@ fieldset {
   margin-bottom: 20px;
 }
 
-input{
+input {
   padding: 0.5rem;
   margin-bottom: 1rem;
   margin-left: 50px;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 button {
   background-color: #eee;
   color: black;
-  border-radius: .3rem;
-  padding: .5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   width: 350px;
 }
 
 .lab {
   display: block;
-  margin-bottom: .1rem;
-  
-
+  margin-bottom: 0.1rem;
 }
 
 legend {
@@ -218,7 +213,6 @@ legend {
   position: absolute;
   top: -20px;
   left: 1px;
-
 }
 
 .purpose {
@@ -232,7 +226,7 @@ legend {
 textarea {
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   width: 300px;
   border: 3px solid rgba(1, 1, 1, 0.1);
 }
@@ -249,6 +243,222 @@ iframe {
 }
 
 .radio {
-   max-width: 30px;
+  max-width: 30px;
   margin-top: 25px;
 }
+/* Home and Trips page additions only */
+.hero-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.2));
+  padding: 1.5rem 2rem;
+  border-radius: 6px;
+  max-width: 780px;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hero-content h1 {
+  position: static;
+  top: auto;
+  width: auto;
+  padding: 0;
+  opacity: 1;
+  background: transparent;
+  text-align: center;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.hero-content p {
+  margin: 0;
+}
+
+.eyebrow,
+.section-tag {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+.newsletter form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.newsletter .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.newsletter button {
+  width: auto;
+  padding: 0.6rem 1rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.cta-panel,
+.trips-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(2, 90, 2, 0.03), rgba(244, 162, 97, 0.03));
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.cta-button,
+.small-cta {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.home-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-card,
+.trip-card {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-card img,
+.trip-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.home-card-content,
+.trip-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.trip-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.trip-card img {
+  height: 160px;
+}
+
+.trip-meta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.trips-table {
+  margin: 2rem 0;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.trips-table thead {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* @media (min-width: 700px) {
+  .newsletter .form-row {
+    flex-direction: row;
+  }
+
+  .newsletter .form-row > div {
+    flex: 1;
+  }
+} */
+
+/* @media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-panel,
+  .trips-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} */
+ .name{
+  margin-top: 20px;
+  position: absolute;
+  top: -8px;
+ }
+ .email{
+  position: absolute;
+  bottom: 21px;
+ }
+
+ .trips-herom img{
+   display: block;
+    max-width: 100px;
+    height: auto;
+}
+ 
